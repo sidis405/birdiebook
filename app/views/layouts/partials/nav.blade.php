@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ Auth::check() ? route('statuses_path') : route('home') }}">LaraBook</a>
+      <a class="navbar-brand" href="{{ Auth::check() ? route('statuses_path') : route('home') }}">BirdieBook</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,7 +26,6 @@
                 {{ $currentUser->username }} <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li>{{ link_to_route('profile_path', 'Your Profile', $currentUser->username ) }}</li>
-                  <li><a href="#">Another action</a></li>
                   <li class="divider"></li>
                   <li>{{ link_to_route('logout_path', 'Log Out') }}</li>
                 </ul>

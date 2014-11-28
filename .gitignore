@@ -1,6 +1,7 @@
 /bootstrap/compiled.php
 /node_modules
 /vendor
+/app/config/database.php
 composer.phar
 composer.lock
 .env.*.php
@@ -8,5 +9,5 @@ composer.lock
 .DS_Store
 Thumbs.db
 .env.*.php
-
+.idea
 tests/_output/*
