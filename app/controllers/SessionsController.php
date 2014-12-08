@@ -42,7 +42,7 @@ class SessionsController extends \BaseController {
         {
             Flash::message('We were unable to log you in. Please check your username/password.');
 
-            Redirect::back()->withInput();
+            return Redirect::back()->withInput();
 
         }
 
